@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Language Select — Agro Connect</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --white: #ffffff;
+      --shadow: 0 8px 20px rgba(0,0,0,0.15);
+      --accent: #2e8b57;
+      --card-radius: 18px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Poppins", sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Page background - change images/bg.jpg to your file */
+    body{
+      background: url("im.jpg") no-repeat center top;
+      background-size: cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .wrapper{
+      width:100%;
+      max-width:420px;           /* mobile-width look */
+      display:flex;
+      flex-direction:column;
+      gap:26px;
+      align-items:center;
+      /* optional translucent panel */
+      padding:28px 20px;
+      box-sizing:border-box;
+    }
+
+    /* language button card */
+    .lang-btn{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 18px;
+      background: var(--white);
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow);
+      cursor:pointer;
+      user-select:none;
+      transition: transform .16s ease, box-shadow .16s ease;
+      text-decoration:none;
+      color: #000;
+    }
+
+    .lang-btn:active { transform: translateY(2px) scale(.998); }
+    .lang-btn:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.18); }
+
+    .lang-text{
+      font-size:34px;
+      font-weight:600;
+      letter-spacing:0.2px;
+    }
+
+    /* Make Telugu/Hindi use larger scripts if needed */
+    .telugu { font-family: "Poppins", sans-serif; /* keep default or change */ }
+    .hindi  { font-family: "Poppins", sans-serif; }
+    .english{ font-family: "Poppins", sans-serif; }
+
+    /* spacing rules for smaller screens */
+    @media (max-width:360px){
+      .lang-text{ font-size:28px; }
+      .lang-btn{ padding:22px 14px; }
+    }
+
+    /* small icon row under buttons (optional) */
+    .small-note{
+      margin-top:8px;
+      color:rgba(0,0,0,0.6);
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="wrapper" role="main" aria-labelledby="language-heading">
+
+    <h1 id="language-heading" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+      Select language
+    </h1>
+
+    <!-- Telugu -->
+    <a class="lang-btn telugu" href="home.html" role="button" aria-label="తెలుగు (Telugu)">
+      <span class="lang-text" >తెలుగు</span>
+    </a>
+
+    <!-- Hindi -->
+    <a class="lang-btn hindi" href="home.html" role="button" aria-label="हिन्दी (Hindi)">
+      <span class="lang-text" >हिन्दी</span>
+    </a>
+
+    <!-- English -->
+    <a class="lang-btn english" href="home.html" role="button" aria-label="English">
+      <span class="lang-text"  >English</span>
+    </a>
+
+    <div class="small-note" aria-hidden="true">Choose your language to continue</div>
+  </main>
+
+</body>
+</html>

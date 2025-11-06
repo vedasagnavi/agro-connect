@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesticide Page — Agro Connect</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url("im.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ===== Top Bar ===== */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .top-bar i {
+      font-size: 22px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    /* ===== Main Content ===== */
+    .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .btn {
+      width: 85%;
+      background-color: #fff;
+      border-radius: 30px;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== Bottom Navigation ===== */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav i {
+      font-size: 23px;
+      color: #000;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .bottom-nav i:hover {
+      color: #2e8b57;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <i class="fa-solid fa-arrow-left" onclick="window.location.href='pestimain.html'"></i>
+    <i class="fa-solid fa-gear" onclick="window.location.href='settings.html'"></i>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <button class="btn" onclick="window.location.href='Organic pest.html'">Organic Pesticides</button>
+    <button class="btn" onclick="window.location.href='inorganic pest.html'">Inorganic Pesticides </button>
+
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <i class="fa-solid fa-home" onclick="window.location.href='home.html'"></i>
+    <i class="fa-regular fa-comment" onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fa-solid fa-circle-plus" onclick="window.location.href='Farmers Profile.html'"></i>
+  
+    <i class="fa-solid fa-user"onclick="window.location.href='profile.html'"></i>
+  </div>
+</body>
+</html>

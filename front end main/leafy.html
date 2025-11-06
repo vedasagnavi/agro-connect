@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leafy Vegetables</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    .container {
+      background-color: #6cc46c;
+      min-height: 100vh;
+    
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #6cc46c;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .header i {
+      font-size: 20px;
+      color: #000;
+    }
+
+    /* Product grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .card {
+      background-color: #eaeaea;
+      border-radius: 15px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .card h4 {
+      margin: 5px 0 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 3px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .seller {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+
+    .seller img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    .seller span {
+      font-size: 13px;
+      color: #000;
+    }
+
+    /* Bottom navigation */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #6cc46c;
+      padding: 10px 0;
+      border-top: 1px solid #000;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .bottom-nav i {
+      font-size: 22px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <i class="fa-solid fa-arrow-left" onclick="window.location.href='home.html'"></i>
+      <h2>Leafy Vegetables</h2>
+      <i class="fa-solid fa-gear" onclick="window.location.href='settings.html'"></i>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid">
+      <div class="card">
+        <img src="pindi.webp" alt="pindi akku" />
+        <h4>Apples</h4>
+        <p>Rs.20 (per 100g)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Suresh</span>
+          <span>Ph:6235458456</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="spinach.jpg" alt="Spinach" />
+        <h4>Spinach</h4>
+        <p>Rs.20 (per 100g)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Ram</span>
+          <span>Ph:9876543210</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cori.jpg" alt="Coriander" />
+        <h4>Coriander</h4>
+        <p>Rs.25 (per 150g)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Venkat</span>
+          <span>Ph:8765432109</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gon.webp" alt="Gongura" />
+        <h4>Gongura</h4>
+        <p>Rs.250 (per 100g)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Ramesh</span>
+          <span>Ph:9876543210</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cabbage.jpg" alt="Cabbage" />
+        <h4>Cabbage</h4>
+        <p>Rs.30 (per kg)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Suresh</span>
+          <span>Ph:9876543210</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cauliflower.jpg" alt="Cauliflower" />
+        <h4>Cauliflower</h4>
+        <p>Rs.40 (per kg)</p>
+        <div class="seller">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="seller" />
+          <span>Suresh</span>
+          <span>Ph:9876543210</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <i class="fa-solid fa-home" onclick="window.location.href='home.html'"></i>
+      <i class="fa-regular fa-comment" onclick="window.location.href='Crop and pesti.html'"></i>
+      <i class="fa-solid fa-plus-circle" onclick="window.location.href='Farmers Profile.html'"></i>
+      <i class="fa-solid fa-user" onclick="window.location.href='profile.html'"></i>
+    </div>
+  </div>
+</body>
+</html>

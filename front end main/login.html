@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("vv.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 350px;
+    }
+
+    h1 {
+      color: green;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      margin-bottom: 20px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background-color: green;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <input type="text" placeholder="Enter email/phone number">
+    <button onclick="window.location.href='otp.html'">Send OTP</button>
+  </div>
+</body>
+</html>

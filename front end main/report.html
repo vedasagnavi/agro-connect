@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report & Help</title>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    header i {
+      margin-right: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    select, textarea {
+      width: 90%;
+      border: none;
+      background-color: #f6f6f6;
+      border-radius: 25px;
+      padding: 15px;
+      font-size: 16px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 120px;
+      border-radius: 15px;
+      resize: none;
+    }
+
+    button {
+      background-color: #f6f6f6;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
+      padding: 10px 0;
+    }
+
+    .bottom-nav i {
+      font-size: 26px;
+      cursor: pointer;
+    }
+  </style>
+ 
+</head>
+<body>
+
+  <header>
+    <i class="fas fa-arrow-left" onclick="window.location.href='settings.html'"></i>
+    Report & Help
+  </header>
+
+  <main>
+    <select>
+      <option>Select Category</option>
+      <option>App Issue</option>
+      <option>Payment Problem</option>
+      <option>Account Support</option>
+      <option>Other</option>
+    </select>
+
+    <textarea placeholder="Description:"></textarea>
+
+    <button>Submit</button>
+  </main>
+
+  <div class="bottom-nav">
+    <i class="fas fa-home" onclick="window.location.href='home.html'"></i>
+    <i class="far fa-comment" onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fas fa-plus-circle" onclick="window.location.href='Farmers Profile.html'"></i>
+    <i class="fas fa-user" onclick="window.location.href='profile.html'"></i>
+  </div>
+
+</body>
+</html>

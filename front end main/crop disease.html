@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Disease Detection</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6eb36e; /* green background */
+  }
+
+  /* Top bar */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+  }
+
+  .top-bar i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  /* Frame section */
+  .scanner {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame {
+    width: 200px;
+    height: 120px;
+    border: 3px solid transparent;
+    position: relative;
+  }
+
+  .frame::before,
+  .frame::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+  }
+
+  /* Top corners */
+  .frame::before {
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border-right: none;
+  }
+  .frame::after {
+    top: 0;
+    right: 0;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  /* Bottom corners */
+  .bottom-frame::before,
+  .bottom-frame::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+  }
+
+  .bottom-frame::before {
+    bottom: 0;
+    left: 0;
+    border-top: none;
+    border-right: none;
+  }
+
+  .bottom-frame::after {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+  }
+
+  /* Horizontal line between two frames */
+  .divider {
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin-bottom:70px;
+  }
+
+  /* Bottom navigation bar */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #6eb36e;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+  }
+
+  .bottom-nav i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- Icons (using Font Awesome for simplicity) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <i class="fas fa-arrow-left"onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fas fa-cog" onclick="window.location.href='settings.html'"></i>
+  </div>
+
+
+  <!-- Title -->
+  <div class="title">Crop Disease Detection</div>
+
+  <!-- Scanner Frame -->
+  <div class="scanner">
+    <div class="frame"></div>
+    <div class="divider"></div>
+    <div class="frame bottom-frame"></div>
+  </div>
+
+  <!-- Bottom Navigation Bar -->
+  <div class="bottom-nav">
+    <i class="fa-solid fa-home" onclick="window.location.href='home.html'"></i>
+    <i class="far fa-comment" onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fas fa-plus-circle" onclick="window.location.href='Farmers Profile.html'"></i>
+    <i class="fas fa-user" onclick="window.location.href='profile.html'"></i> 
+  </div>
+
+</body>
+</html>

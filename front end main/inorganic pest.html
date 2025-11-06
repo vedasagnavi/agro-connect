@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesticides</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 10px 15px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px 16px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .item h4 {
+      margin: 0;
+      color: #00695c;
+      font-size: 16px;
+    }
+
+    .item p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+    }
+     /* Footer navigation */
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #ccc;
+    }
+
+    footer i {
+      font-size: 22px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+ <header>
+    <i class="fas fa-arrow-left" onclick="window.location.href='pesticides.html'" ></i>
+    <h2> Inorganic Pesticides</h2>
+    <i class="fas fa-cog" onclick="window.location.href='settings.html'"></i>
+  </header>
+
+  <div class="container">
+    
+
+    <div class="item">
+      <h4>1. DDT (Dichloro Diphenyl Trichloroethane)</h4>
+      <p><b>Source:</b> Synthetic chemical compound (chlorinated hydrocarbon)</p>
+      <p><b>Used For:</b> Mosquitoes, flies, crop-eating insects</p>
+      <p><b>How It Works:</b> Attacks insect nervous system, causes paralysis and death</p>
+    </div>
+
+    <div class="item">
+      <h4>2. Malathion</h4>
+      <p><b>Source:</b> Organophosphate compound</p>
+      <p><b>Used For:</b> Aphids, leafhoppers, fruit flies, and mites</p>
+      <p><b>How It Works:</b> Stops nerve transmission in insects, causing quick death</p>
+    </div>
+
+    <div class="item">
+      <h4>3. Carbaryl (Sevin)</h4>
+      <p><b>Source:</b> Synthetic carbamate chemical</p>
+      <p><b>Used For:</b> Beetles, caterpillars, and worms</p>
+      <p><b>How It Works:</b> Affects insect's central nervous system</p>
+    </div>
+
+    <div class="item">
+      <h4>4. Endosulfan</h4>
+      <p><b>Source:</b> Organochlorine compound (synthetic)</p>
+      <p><b>Used For:</b> Aphids, whiteflies, and borers</p>
+      <p><b>How It Works:</b> Damages insect nerve cells</p>
+    </div>
+
+    <div class="item">
+      <h4>5. Copper Sulfate</h4>
+      <p><b>Source:</b> Inorganic mineral salt (CuSO₄)</p>
+      <p><b>Used For:</b> Fungal diseases like blight and mildew</p>
+      <p><b>How It Works:</b> Kills fungal spores and prevents spread</p>
+    </div>
+
+    <div class="item">
+      <h4>6. Sulfur Dust</h4>
+      <p><b>Source:</b> Elemental sulfur (natural mineral, chemically refined)</p>
+      <p><b>Used For:</b> Powdery mildew, rust, and mites</p>
+      <p><b>How It Works:</b> Produces sulfur vapors toxic to fungi and pests</p>
+    </div>
+
+    <div class="item">
+      <h4>7. Zinc Phosphide</h4>
+      <p><b>Source:</b> Inorganic compound (Zn₃P₂)</p>
+      <p><b>Used For:</b> Rodent control (rats, mice)</p>
+      <p><b>How It Works:</b> Produces poisonous phosphine gas in stomach of rodents</p>
+    </div>
+
+    <div class="item">
+      <h4>8. Bordeaux Mixture</h4>
+      <p><b>Source:</b> Mix of Copper Sulfate + Lime + Water</p>
+      <p><b>Used For:</b> Fungal infections in grapes, potatoes, and tomatoes</p>
+      <p><b>How It Works:</b> Coats leaves and prevents fungal spore germination</p>
+    </div>
+
+    <div class="item">
+      <h4>9. Paris Green</h4>
+      <p><b>Source:</b> Copper acetoarsenite compound</p>
+      <p><b>Used For:</b> Leaf-eating caterpillars and beetles</p>
+      <p><b>How It Works:</b> Arsenic component acts as stomach poison for pests</p>
+    </div>
+
+    <div class="item">
+      <h4>10. Lime Sulfur</h4>
+      <p><b>Source:</b> Calcium polysulfide (from lime + sulfur mix)</p>
+      <p><b>Used For:</b> Fungi, mites, and insects</p>
+      <p><b>How It Works:</b> Releases sulfur dioxide gas that kills pests and spores</p>
+    </div>
+  </div>
+  <footer>
+      <i class="fa-solid fa-home" onclick="window.location.href='home.html'" ></i>
+    <i class="fa-regular fa-comment"onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fa-solid fa-circle-plus" onclick="window.location.href='Farmers Profile.html'"></i>
+ 
+    <i class="fa-solid fa-user" onclick="window.location.href='profile.html'"></i>
+    </footer>
+</body>
+</html>

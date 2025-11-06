@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Settings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .header h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .header i {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 20px;
+      background-color: #fff;
+      margin: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+    }
+
+    .about-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .about-header i {
+      font-size: 24px;
+    }
+
+    .about-header span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .about-content {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .about-content ul {
+      margin: 10px 0 10px 20px;
+    }
+
+    .about-content li {
+      margin-bottom: 8px;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav i {
+      font-size: 26px;
+      color: #000;
+    }
+
+    .bottom-nav i.active {
+      color: #7a3fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <i class="fas fa-arrow-left" onclick="window.location.href='settings.html'"></i>
+
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <div class="about-header">
+      <i class="fas fa-circle-info"></i>
+      <span>About</span>
+    </div>
+
+    <div class="about-content">
+      <p><strong>AgroConnect</strong> is a smart agriculture platform that connects farmers directly with buyers and provides digital tools to improve farming efficiency and income.</p>
+
+      <p><strong>Key Features</strong></p>
+      <ul>
+        <li><strong>Direct Farmer–Buyer Connection:</strong> Eliminates middlemen for fair pricing.</li>
+        <li><strong>Crop Disease Detection:</strong> AI-powered early diagnosis of crop issues.</li>
+        <li><strong>Fertilizer & Pesticide Suggestions:</strong> Smart recommendations for better yield.</li>
+        <li><strong>Multi-Language Support:</strong> Accessible to farmers across regions.</li>
+        <li><strong>Weather Report:</strong> Localized forecasts for better planning.</li>
+        <li><strong>Voice Assistant:</strong> Easy access to information through voice commands.</li>
+      </ul>
+
+      <p><strong>Mission</strong></p>
+      <p>To empower Indian farmers with technology that enables fair trade, smarter decisions, and improved livelihoods.</p>
+
+      <p><strong>Vision</strong></p>
+      <p>To create a connected and intelligent agricultural ecosystem where every farmer has access to markets, knowledge, and tools for sustainable growth.</p>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation Bar -->
+  <div class="bottom-nav">
+    <i class="fa-solid fa-home" onclick="window.location.href='home.html'" ></i>
+    <i class="fa-regular fa-comment"onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fa-solid fa-circle-plus" onclick="window.location.href='Farmers Profile.html'"></i>
+ 
+    <i class="fa-solid fa-user" onclick="window.location.href='profile.html'"></i>
+  </div>
+
+</body>
+</html>

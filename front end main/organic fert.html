@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fertilizers</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      color: #aeaeae;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 10px 15px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+    }
+
+    header h2 {
+      font-size: 18px;
+      font-weight: 500;
+      color:#000
+    }
+
+    header i {
+      font-size: 20px;
+      color: black;
+    }
+
+    /* Scrollable content */
+    .content {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      padding: 15px;
+      height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px;
+        color: black;
+      text-decoration: underline;
+    }
+
+    .item {
+      margin-bottom: 18px;
+    }
+
+    .item h4 {
+      font-size: 15px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .item p {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 3px;
+    }
+
+    /* Footer navigation */
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #ccc;
+    }
+
+    footer i {
+      font-size: 22px;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <i class="fas fa-arrow-left" onclick="window.location.href='pestimain.html'"></i>
+    <h2>Fertilizers</h2>
+    <i class="fas fa-cog" onclick="window.location.href='settings.html'"></i>
+  </header>
+
+  <!-- Scrollable content -->
+  <div class="content">
+    <h3>Organic</h3>
+
+    <div class="item">
+      <h4>1. Compost</h4>
+      <p><b>Source:</b> Decomposed kitchen waste, leaves, and plant material</p>
+      <p><b>Used For:</b> Improving overall soil health and fertility</p>
+      <p><b>How It Works:</b> Adds organic matter, increases soil microbes, and improves water retention</p>
+    </div>
+
+    <div class="item">
+      <h4>2. Vermicompost</h4>
+      <p><b>Source:</b> Decomposed organic waste processed by earthworms</p>
+      <p><b>Used For:</b> All crops for better growth and yield</p>
+      <p><b>How It Works:</b> Enriches soil with nutrients, enzymes, and beneficial bacteria</p>
+    </div>
+
+    <div class="item">
+      <h4>3. Cow Dung Manure</h4>
+      <p><b>Source:</b> Decomposed cow dung and straw</p>
+      <p><b>Used For:</b> General crop nourishment and soil improvement</p>
+      <p><b>How It Works:</b> Provides nitrogen, phosphorus, and potassium slowly to plants</p>
+    </div>
+
+    <div class="item">
+      <h4>4. Bone Meal</h4>
+      <p><b>Source:</b> Crushed animal bones</p>
+      <p><b>Used For:</b> Root crops and flowering plants</p>
+      <p><b>How It Works:</b> High in phosphorus — promotes root and flower development</p>
+    </div>
+
+    <div class="item">
+      <h4>5. Fish Emulsion</h4>
+      <p><b>Source:</b> Liquid made from fish waste and oil</p>
+      <p><b>Used For:</b> Leafy vegetables and fast-growing plants</p>
+      <p><b>How It Works:</b> Provides nitrogen for rapid green growth</p>
+    </div>
+
+    <div class="item">
+      <h4>6. Seaweed Extract</h4>
+      <p><b>Source:</b> Marine seaweeds (kelp)</p>
+      <p><b>Used For:</b> All crops, especially fruiting plants</p>
+      <p><b>How It Works:</b> Boosts growth hormones, improves resistance to stress</p>
+    </div>
+
+    <div class="item">
+      <h4>7. Green Manure</h4>
+      <p><b>Source:</b> Plants like clover or sun hemp grown and plowed into soil</p>
+      <p><b>Used For:</b> Enriching soil before planting crops</p>
+      <p><b>How It Works:</b> Adds nitrogen and organic matter to soil naturally</p>
+    </div>
+
+    <div class="item">
+      <h4>8. Wood Ash</h4>
+      <p><b>Source:</b> Burnt plant or wood residues</p>
+      <p><b>Used For:</b> Potassium-loving plants like tomatoes and roses</p>
+      <p><b>How It Works:</b> Raises soil pH and adds potassium and calcium</p>
+    </div>
+
+    <div class="item">
+      <h4>9. Banana Peel Fertilizer</h4>
+      <p><b>Source:</b> Dried or soaked banana peels</p>
+      <p><b>Used For:</b> Flowering and fruiting plants</p>
+      <p><b>How It Works:</b> High in potassium and phosphorus for better blooms</p>
+    </div>
+
+    <div class="item">
+      <h4>10. Panchagavya</h4>
+      <p><b>Source:</b> Mix of cow dung, urine, milk, curd, and ghee</p>
+      <p><b>Used For:</b> All types of crops</p>
+      <p><b>How It Works:</b> Multi-nutrient organic tonic that boosts plant immunity and growth</p>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <i class="fas fa-home" onclick="window.location.href='home.html'"></i>
+    <i class="far fa-comment" onclick="window.location.href='Crop and pesti.html'"></i>
+    <i class="fas fa-plus-circle" onclick="window.location.href='Farmers Profile.html'"></i>
+    <i class="fas fa-user" onclick="window.location.href='profile.html'"></i>
+  </footer>
+</body>
+</html>
